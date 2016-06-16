@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserValidationJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Rut" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserValidationJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserValidationJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserValidationXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Rut" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserValidationXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserValidationXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssociatedServicesJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdUsuarioWeb" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssociatedServicesJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAssociatedServicesJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssociatedServicesXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdUsuarioWeb" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssociatedServicesXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAssociatedServicesXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteConsumoJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdServicio" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteConsumoJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReporteConsumoJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteConsumoXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IdServicio" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReporteConsumoXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReporteConsumoXMLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserValidationJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserValidationJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetUserValidationJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserValidationJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserValidationXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserValidationXML" />
+  </wsdl:message>
+  <wsdl:message name="GetUserValidationXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserValidationXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssociatedServicesJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssociatedServicesJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetAssociatedServicesJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssociatedServicesJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssociatedServicesXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssociatedServicesXML" />
+  </wsdl:message>
+  <wsdl:message name="GetAssociatedServicesXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssociatedServicesXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteConsumoJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReporteConsumoJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteConsumoJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReporteConsumoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteConsumoXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReporteConsumoXML" />
+  </wsdl:message>
+  <wsdl:message name="GetReporteConsumoXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReporteConsumoXMLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Services1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationJSON">
+      <wsdl:input message="tns:GetUserValidationJSONSoapIn" />
+      <wsdl:output message="tns:GetUserValidationJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationXML">
+      <wsdl:input message="tns:GetUserValidationXMLSoapIn" />
+      <wsdl:output message="tns:GetUserValidationXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesJSON">
+      <wsdl:input message="tns:GetAssociatedServicesJSONSoapIn" />
+      <wsdl:output message="tns:GetAssociatedServicesJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesXML">
+      <wsdl:input message="tns:GetAssociatedServicesXMLSoapIn" />
+      <wsdl:output message="tns:GetAssociatedServicesXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoJSON">
+      <wsdl:input message="tns:GetReporteConsumoJSONSoapIn" />
+      <wsdl:output message="tns:GetReporteConsumoJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoXML">
+      <wsdl:input message="tns:GetReporteConsumoXMLSoapIn" />
+      <wsdl:output message="tns:GetReporteConsumoXMLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Services1Soap" type="tns:Services1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationJSON">
+      <soap:operation soapAction="http://tempuri.org/GetUserValidationJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationXML">
+      <soap:operation soapAction="http://tempuri.org/GetUserValidationXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesJSON">
+      <soap:operation soapAction="http://tempuri.org/GetAssociatedServicesJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesXML">
+      <soap:operation soapAction="http://tempuri.org/GetAssociatedServicesXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoJSON">
+      <soap:operation soapAction="http://tempuri.org/GetReporteConsumoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoXML">
+      <soap:operation soapAction="http://tempuri.org/GetReporteConsumoXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Services1Soap12" type="tns:Services1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetUserValidationJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserValidationXML">
+      <soap12:operation soapAction="http://tempuri.org/GetUserValidationXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetAssociatedServicesJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssociatedServicesXML">
+      <soap12:operation soapAction="http://tempuri.org/GetAssociatedServicesXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetReporteConsumoJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporteConsumoXML">
+      <soap12:operation soapAction="http://tempuri.org/GetReporteConsumoXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Services1">
+    <wsdl:port name="Services1Soap" binding="tns:Services1Soap">
+      <soap:address location="http://localhost/AppMobile.Web.Services/Services.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Services1Soap12" binding="tns:Services1Soap12">
+      <soap12:address location="http://localhost/AppMobile.Web.Services/Services.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

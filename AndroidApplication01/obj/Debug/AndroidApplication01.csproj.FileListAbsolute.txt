@@ -1,0 +1,17 @@
+C:\Develop3\AndroidApplication01\AndroidApplication01\bin\Debug\AndroidApplication01.dll
+C:\Develop3\AndroidApplication01\AndroidApplication01\bin\Debug\AndroidApplication01.pdb
+C:\Develop3\AndroidApplication01\AndroidApplication01\bin\Debug\AndroidApplication01.dll.mdb
+C:\Develop3\AndroidApplication01\AndroidApplication01\bin\Debug\AndroidApplication01.AndroidApplication01.apk
+C:\Develop3\AndroidApplication01\AndroidApplication01\bin\Debug\AndroidApplication01.AndroidApplication01-Signed.apk
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\ResolveAssemblyReference.cache
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\AndroidApplication01.dll
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\AndroidApplication01.pdb
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\android\bin\AndroidApplication01.AndroidApplication01.apk
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\layout\linear.axml
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\layout\spinerexample.axml
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\layout\main.axml
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\values\strings.xml
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\drawable\icon.png
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\R.cs.flag
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\uploadflags.txt
+C:\Develop3\AndroidApplication01\AndroidApplication01\obj\Debug\res\layout\formexample.axml
